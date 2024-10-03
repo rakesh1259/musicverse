@@ -1,0 +1,188 @@
+{
+  "version": "1.0",
+  "collections": [
+    {
+      "name": "MusicVerse API",
+      "requests": [
+        {
+          "name": "Get All Artists",
+          "method": "GET",
+          "url": "http://localhost:5000/artists",
+          "headers": [],
+          "body": {
+            "type": "json",
+            "raw": {}
+          }
+        },
+        {
+          "name": "Create Artist",
+          "method": "POST",
+          "url": "http://localhost:5000/artists",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "type": "json",
+            "raw": {
+              "name": "Artist Name",
+              "genre": "Pop",
+              "image_url": "https://example.com/artist.jpg"
+            }
+          }
+        },
+        {
+          "name": "Update Artist",
+          "method": "PUT",
+          "url": "http://localhost:5000/artists/:id",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "type": "json",
+            "raw": {
+              "name": "Updated Artist Name",
+              "genre": "Rock",
+              "image_url": "https://example.com/artist_updated.jpg"
+            }
+          }
+        },
+        {
+          "name": "Delete Artist",
+          "method": "DELETE",
+          "url": "http://localhost:5000/artists/:id",
+          "headers": [],
+          "body": {
+            "type": "json",
+            "raw": {}
+          }
+        },
+        {
+          "name": "Get All Albums",
+          "method": "GET",
+          "url": "http://localhost:5000/albums",
+          "headers": [],
+          "body": {
+            "type": "json",
+            "raw": {}
+          }
+        },
+        {
+          "name": "Create Album",
+          "method": "POST",
+          "url": "http://localhost:5000/albums",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "type": "json",
+            "raw": {
+              "artist_id": 1,
+              "title": "Album Title",
+              "release_year": 2024,
+              "cover_url": "https://example.com/album.jpg"
+            }
+          }
+        },
+        {
+          "name": "Update Album",
+          "method": "PUT",
+          "url": "http://localhost:5000/albums/:id",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "type": "json",
+            "raw": {
+              "artist_id": 1,
+              "title": "Updated Album Title",
+              "release_year": 2024,
+              "cover_url": "https://example.com/album_updated.jpg"
+            }
+          }
+        },
+        {
+          "name": "Delete Album",
+          "method": "DELETE",
+          "url": "http://localhost:5000/albums/:id",
+          "headers": [],
+          "body": {
+            "type": "json",
+            "raw": {}
+          }
+        },
+        {
+          "name": "Get All Songs",
+          "method": "GET",
+          "url": "http://localhost:5000/songs",
+          "headers": [],
+          "body": {
+            "type": "json",
+            "raw": {}
+          }
+        },
+        {
+          "name": "Create Song",
+          "method": "POST",
+          "url": "http://localhost:5000/songs",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "type": "json",
+            "raw": {
+              "album_id": 1,
+              "title": "Song Title",
+              "duration": "03:30",
+              "track_number": 1
+            }
+          }
+        },
+        {
+          "name": "Update Song",
+          "method": "PUT",
+          "url": "http://localhost:5000/songs/:id",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "type": "json",
+            "raw": {
+              "album_id": 1,
+              "title": "Updated Song Title",
+              "duration": "04:00",
+              "track_number": 2
+            }
+          }
+        },
+        {
+          "name": "Delete Song",
+          "method": "DELETE",
+          "url": "http://localhost:5000/songs/:id",
+          "headers": [],
+          "body": {
+            "type": "json",
+            "raw": {}
+          }
+        }
+      ]
+    }
+  ]
+}
